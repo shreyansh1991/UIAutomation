@@ -12,6 +12,7 @@ public class HandleNewTab extends TestBase {
 	@Test
 	public void handleNewTab()
 	{
+		System.out.println("inside testscript handleNewTab");
 		SeleniumPracticePage sp = new SeleniumPracticePage(driver);
 		sp.clickNewTabButton();
 		GenericUtility.getParentWindowID(); // to get Parent window id
