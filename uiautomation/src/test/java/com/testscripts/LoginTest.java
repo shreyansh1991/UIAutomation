@@ -19,6 +19,7 @@ public class LoginTest extends TestBase {
 
 	@Test(dataProvider = "getData",enabled=false)
 	public void verifyLogin(String email, String pass) {
+		System.out.println("inside data provider testscript");
 
 		hp = new HomePage(driver);
 		hp.clickSignInLink();
